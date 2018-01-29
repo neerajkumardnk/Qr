@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.reach.qr.Login">
+    <ProgressBar
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/LoginTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Login"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <com.libizo.CustomEditText
+        android:id="@+id/emailTextViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:hint="EMAIL ID "
+        android:inputType="text"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+
+    <com.libizo.CustomEditText
+        android:id="@+id/pwTextViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="PASSWORD "
+        android:inputType="textPassword"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/btn_previewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:mfb_borderColor="#8f1f15"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_defaultColor="#8f1f15"
+        fancy:mfb_focusColor="#9bd823"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="LOGIN"
+        fancy:mfb_textColor="#FFFFFF" />
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/btn_previewSignUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:mfb_borderColor="#8f1f15"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_defaultColor="#8f1f15"
+        fancy:mfb_focusColor="#9bd823"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="SIGN UP"
+        fancy:mfb_textColor="#FFFFFF" />
+
+
+
+
+
+</LinearLayout>

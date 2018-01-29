@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.reach.qr.SignUp">
+    <ProgressBar
+        android:id="@+id/progressBarRegister"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/SignUpTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign Up"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="160dp"
+        android:src="@mipmap/ic_account_circle_black_48dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <com.libizo.CustomEditText
+        android:id="@+id/nameTextViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Name"
+        android:inputType="text"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+    <com.libizo.CustomEditText
+        android:id="@+id/nameTextViewPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Phone Number"
+        android:inputType="text"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+
+
+    <com.libizo.CustomEditText
+        android:id="@+id/emailTextViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email ID "
+        android:inputType="textWebEmailAddress"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+
+
+    <com.libizo.CustomEditText
+        android:id="@+id/pwTextViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Password "
+        android:inputType="textPassword"
+        app:libIZO_clearIconTint="#8f1f15"
+        app:libIZO_setBorderColor="#8f1f15"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="4dp"
+        app:libIZO_setStrokeWidth="2dp" />
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/btn_previewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:mfb_borderColor="#8f1f15"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_defaultColor="#8f1f15"
+        fancy:mfb_focusColor="#9bd823"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="Sign Up"
+        fancy:mfb_textColor="#FFFFFF" />
+
+
+
+</LinearLayout>
